@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SurfBot</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 
 <body>
 
-    <span class="aviso">
+    <div class="aviso">
         <p>Aulas na Praia Mansa de Sexta à Domingo das 06:00 às 14:00</p>
-    </span>
+    </div>
 
     <header>
         <div class="logo" data-aos="fade-right" data-aos-delay="900">
@@ -34,7 +35,7 @@
             <h1>Escola de Surf</h1>
             <div class="matricule-se">
                 <input type="email" name="email" id="email" placeholder="Email">
-                <label for="email">Matricule-se <img src="images/Vector.png" alt="Vector"></label>
+                <label for="email"><p>Matricule-se</p> <img src="images/Vector.png" alt="Vector"></label>
             </div>
         </div>
     </aside>
@@ -42,6 +43,9 @@
     <aside id="about">
         <article class="fotosELocal" data-aos="fade-right">
             <div class="imageGaleria">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="images/foto-galeria@2x.jpg" type="image/jpg">
+                </picture>
                 <img src="images/foto-galeria.jpg" alt="Foto Galeria">
             </div>
             <div class="imageMap">
@@ -169,10 +173,10 @@
             </div>
             <div class="mensagem" data-aos="fade-right"
             data-aos-anchor-placement="center-bottom">
-                <label for="mensagem">Mensagem</label> <br>
+                <label class="labelMsg" for="mensagem">Mensagem</label> <br>
                 <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
             </div>
-            <button class="btnMensagem" type="submit">ENVIAR MENSAGEM <img src="images/Vector.png" alt="Vector"></button>
+            <div class="btnMensagem"><button class="btnMensagem" type="submit">ENVIAR MENSAGEM <img src="images/Vector.png" alt="Vector"></button></div>
         </form>
         <article class="contato2">
             <div class="endereco">
@@ -190,7 +194,7 @@
                 <a href="tel:88981458537">(88) 98145-8537</a>
             </div>
             <div class="horario">
-                <h4><img src="images/on.png" alt="Vector Verde"><p>Horário</p></h4>
+                <h4><img src="images/on.png" alt="Vector Verde"><p class="notThis">Horário</p></h4>
                 <p>De sexta à Sábado</p>
                 <p>Das 06:00 às 14:00</p>
             </div>

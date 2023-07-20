@@ -1,0 +1,328 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+:root {
+    --cor01blue: #269BFF;
+    --cor02blue: #1188EE;
+    --cor03blue: #0467CC;
+
+    --cor01white: #EFF4F9;
+    --cor02white: #BBCCDD;
+    --cor03white: #99AABB;
+
+    --cor01gray: #667788;
+    --cor02gray: #445566;
+    --cor03gray: #17222D;
+
+    --cor01red: #FF3726;
+    --cor02red: #EE2211;
+    --cor03red: #D91504;
+
+    --fonte01: 'Alice';
+    --fonte02: 'Nunito';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--fonte02);
+}
+.aviso p {
+    background-color: var(--cor02blue);
+    color: var(--cor01white);
+    font-size: 0.8em;
+    font-weight: 600;
+    padding: 10px;
+}
+header {
+    padding: 20px;
+    background-color: var(--cor03gray);
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0px;
+}
+nav a {
+    color: var(--cor01white);
+    text-decoration: none;
+}
+nav .especial-nav {
+    border-bottom: 2px solid var(--cor01red);
+}
+.apresentacao {
+    position: relative;
+    background: url('images/bg-intro@2x.jpg') no-repeat center center;
+    background-size: cover;
+    height: 250px;
+}
+.escolaSurf {
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+.escolaSurf h1 {
+    font-size: 2em;
+    text-align: center;
+    color: var(--cor01white);
+}
+.matricule-se {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+}  
+.matricule-se input {
+    padding: 3px;
+    font-family: var(--fonte02);
+    outline: none;
+}
+.matricule-se label {
+    background-color: var(--cor03red);
+    color: var(--cor01white);
+    font-family: var(--fonte02);
+    padding: 3px;
+    border-radius: 5px;
+}
+.fotosELocal .imageGaleria {
+    padding: 30px 0px;
+}
+.fotosELocal .imageGaleria img, .imageMap img {
+    width: 100%;
+    border-radius: 18px;
+}
+.info {
+    padding: 40px 10px;
+}
+.info h4 {
+    display: flex;
+    align-items: center;
+}
+.info h4 img {
+    color: var(--cor01blue);
+    padding: 0px 5px;
+}
+.info ul {
+    display: flex;
+    flex-direction: column;
+}
+.info ul li {
+    list-style-position: inside;
+    padding: 5px;
+    color: var(--cor01gray);
+}
+.info ul li span {
+    color: var(--cor03gray);
+    font-weight: 800;
+}
+.info ul li::marker {
+    content: '- ';
+    font-size: 1.9em;
+    color: var(--cor01blue);
+}
+.infor2 {
+    padding: 30px 15px;
+}
+.infor2 h3 {
+    font-size: 2rem;
+}
+.infor2 h3 span {
+    color: var(--cor02blue);
+}
+.listasInfor {
+    padding: 20px 0px;
+}
+.listasInfor ul li {
+    list-style-position: inside;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 10px 0px;
+}
+.paragInfor {
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+#aulas {
+    position: relative;
+    background-color: var(--cor01white);
+    padding: 40px 15px;
+}
+.inicio .ondas {
+    position: absolute;
+    top: -35px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inicio h1 {
+    text-align: center;
+    font-size: 2em;
+    font-family: var(--fonte01);
+    padding: 10px 0px;
+}
+#aulas ul li {
+    list-style-position: inside;
+}
+.cards fieldset {
+    box-shadow: 0px 0px 4px var(--cor03white);
+    border: none;
+    background-color: #fff; 
+    margin: 30px 20px;
+    padding: 20px 10px;
+}
+.cards legend {
+    text-align: center;
+}
+.cards h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.cards li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 10px 0px;
+}
+.cards hr {
+    border: 1px solid var(--cor03gray);
+    margin: 20px 0px;
+}
+.valorAula1, .valorAula2, .valorAula3 {
+    color: var(--cor02blue);
+    font-weight: 700;
+}
+.btnMatricule-se {
+    margin: 20px 10px;
+    text-align: center;
+}
+.btnMatricule-se button {
+    font-family: var(--fonte02);
+    font-size: 1em;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--cor02gray);
+    color: #fff;
+}
+.btnMatricule-se img {
+    padding-left: 15px;
+}
+.promocao {
+    padding: 40px 10px;
+}
+.promocao p {
+    padding: 5px 0px;
+    color: var(--cor02gray);
+    font-size: 1.1em;
+}
+.promocao p span {
+    color: var(--cor01red);
+}
+.promocao p a {
+    text-decoration: none;
+    border-bottom: 1px solid var(--cor01red);
+    color: var(--cor02gray);
+    cursor: pointer;
+}
+#tumber {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('images/foto-quote.jpg') no-repeat center top;
+    background-size: cover;
+    color: #fff;
+    height: 250px;
+}
+#tumber h1 {
+    width: 80%;
+}
+#contato {
+    margin: 40px 20px;
+}
+#contato h1 {
+    font-family: var(--fonte01);
+    text-align: center;
+    font-size: 2em;
+    padding: 10px 0px 30px 0px;
+}
+.nome, .emailContato {
+    position: relative;
+    width: 60%;
+    padding: 10px 0px;
+}
+.nome input, .emailContato input {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--cor01white);
+}
+.mensagem {
+    margin-bottom: 20px;
+}
+textarea {
+    background-color: var(--cor01white);;
+}
+.nome input ~ label,
+.emailContato input ~ label {
+    position: absolute;
+    left: 5px;
+    top: 25%;
+    transition: all .2s linear;
+}
+.nome input:focus ~ label, .nome input:valid ~ label,
+.emailContato input:focus ~ label, .emailContato input:valid ~ label {
+    transform: translateY(-20px);
+}
+.btnMensagem {
+    color: #fff;
+    background-color: var(--cor02gray);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: var(--fonte02);
+    transition: all .3s ease-in-out;
+}
+.btnMensagem:hover {
+    transform: translateX(10px)
+}
+.contato2 {
+    margin: 40px 0px;
+}
+.contato2 h4 {
+    font-size: 1.2em;
+    padding: 10px 0px;
+}
+.contato2 p {
+    color: var(--cor02gray);
+    padding: 3px 0px;
+}
+.endereco a {
+    color: var(--cor02gray);
+    text-decoration: none;
+}
+.emailTelefone {
+    display: flex;
+    flex-direction: column;
+}
+.emailTelefone a {
+    padding: 3px;
+}
+.emailTelefone a {
+    color: var(--cor02gray);
+    text-decoration: none;
+}
+h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}

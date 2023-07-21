@@ -60,6 +60,14 @@
         height: 30px;
     }
 
+    .imageGaleria, .imageMap {
+        text-align: center;
+    }
+
+    .imageGaleria img, .imageMap img {
+        max-width: 600px;
+    }
+
     .info h4 {
         font-size: 1.8rem;
     }
@@ -191,17 +199,56 @@
     .contato2 h4 {
         font-size: 2rem;
     }
+
     .contato2 p {
         font-size: 1.5rem;
     }
+
     .contato2 a {
         font-size: 1.5rem;
     }
+
     h4 {
         display: flex;
         align-items: center;
     }
+
     .horario p:not(.notThis) {
         padding-bottom: 20px;
     }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .logo img {
+        padding: 50px;
+    }
+
+    nav a:hover:not(.especial-nav) {
+        text-decoration: underline;
+    }
+   
+    .info {
+        text-align: center;
+    }
+
+    .info h4 {
+        justify-content: center;
+    }
+
+    .infor2 {
+        text-align: center;
+    }
+
+    .listasInfor ul li {
+        justify-content: center;
+    }
+
+    .paragInfor p {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    
+    
 }
